@@ -21,10 +21,8 @@ repositories {
 
 dependencies {
     compile 'com.google.guava:guava:21.0'
-    compile("org.springframework.boot:spring-boot-starter-web") {
-        exclude module: "spring-boot-starter-tomcat"
-    }
-    compile("org.springframework.boot:spring-boot-starter-jetty")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-redis")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     testCompile("junit:junit")
 }
